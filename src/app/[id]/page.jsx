@@ -11,6 +11,8 @@ const fetchMovie = (id) => {
 export default async function MoviePage({ params }) {
   const { id } = params;
 
+  const data = await fetchMovie(id);
+
   return (
     <RootLayout title={data.original_title}>
       <Header />
