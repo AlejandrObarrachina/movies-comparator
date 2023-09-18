@@ -1,8 +1,8 @@
 export default function Card({ movies }) {
-  console.log(movies);
   const imgUrl = "https://image.tmdb.org/t/p/w500";
   return (
     <a
+      href={`/${movies.id}`}
       key={movies.key}
       className="text-center cursor-pointer rounded-lg border shadow-md bg-gray-900 border-gray-700 hover:scale-105 hover:border-gray-600 transition flex flex-col"
     >
